@@ -1,54 +1,245 @@
-<!doctype html>
-<html>
-<head>
-<script src="https://unpkg.com/react@15/dist/react.min.js"> 
-</script>
-<script src="https://unpkg.com/react-dom@15/dist/react-dom.min.js">
-</script>
-<script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js">
-</script>
-</head>
-<body>
-    <div id="root"></div>
-    <script type="text/babel">
-    class Hello2 extends React.Component {
-    render() {
-        return <h1>Hello {this.props.message}!</h1>;
-    	}
-	}
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">        
+        <meta name="description" content="website"/>
+        <meta name="author" content="joma"/>
+        <meta name="keywords" content="website, example, tags"/>
+        <title>Website</title>        
+        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-	class Hello extends React.Component {
+    </head>
+
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+                <a href="#" class="navbar-brand">Logo</a>
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        
+                <div class="collapse navbar-collapse" id="navbarMenu">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Precios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Productos</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>    
+
+            <div class="jumbotron text-center">
+                <h1>Welcome to my website</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, laborum!</p>
+                <hr class="my-4">
+                <a class="btn btn-primary" href="#" role="button">Read more</a>
+              </div>
+        </header>    
+
+        <main>
+            <section>
+                <div class="container">
+                    <article>
+                        <hgroup>
+                            <h1>First Article</h1>
+                            <h2>Subtitle first article</h2>
+                        </hgroup>
+                        <time datetime="01-09-2020">Published 01-09-2020</time>
+                        <p style="color:red" class="text-uppercase">This is a paragraph of color red</p>
+                        <hr>
+                        <p title="I'm paragraph">
+                            <u>This is a paragraph.</u>
+                        </p>
+                        <b>This text is big bold</b>
+                        <p>The <abbr title="World Wide Web">WWW</abbr> was invented in 1989.</p>
+                        <p><i>Lorem ipsum dolor sit amet.</i></p>
+                        <hr>
+                        <button class="btn btn-default">Click me</button>
+                        <a href="#" class="btn btn-danger" role="button">click me</a>
+                        <input type="submit" class="btn btn-success" value="click me">
+                        <hr>
+
+                        <!-- Buttons -->
+                        <button class="btn btn-default">default</button>
+                        <button class="btn btn-primary">primary</button>
+                        <button class="btn btn-danger">danger</button>
+                        <button class="btn btn-success">success</button>
+                        <button class="btn btn-info">info</button>
+                        <button class="btn btn-warning">warning</button>
+                        <button class="btn btn-link">link</button>
+
+                        <hr>
+
+                        <button class="btn btn-info btn-lg">info</button>
+                        <button class="btn btn-warning btn-sm">warning</button>
+                        <button class="btn btn-link btn-xs" disabled="disabled">link</button>
+
+                        <hr>
+
+                        <p class="text-justify"><mark>Lorem ipsum dolor sit amet</mark> consectetur adipisicing elit. Exercitationem eveniet officia aliquam et laudantium quas pariatur doloribus quaerat itaque ullam saepe optio quo rerum perspiciatis similique iusto at est quis quam sint, expedita ipsum tempore laboriosam. Voluptatem, maxime eos necessitatibus sapiente temporibus exercitationem ratione voluptates aliquid dolorem molestiae cum itaque.</p>
+
+                        <p></p>
+                        
+                        <img src="img_girl.jpg" alt="Girl with a jacket" width="300" height="400">
+                        <p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
+
+                        <img src="No_exist.png" alt="There is not imagen" width="300" height="400">
+
+                        <p style="color:blue;">Lorem ipsum...</p>
+                        <p style="color:orange;">Ut wisi enim...</p>
+
+                        <p class="bg-danger">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi iste voluptas modi alias delectus provident, praesentium ea consequatur rem illo laboriosam, blanditiis est placeat maiores ipsa. Hic, quia. Adipisci, et!</p>
+                        <p class="bg-warning">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi iste voluptas modi alias delectus provident, praesentium ea consequatur rem illo laboriosam, blanditiis est placeat maiores ipsa. Hic, quia. Adipisci, et!</p>
+
+                        <footer>
+                            <address>
+                                <a href="http://google.com" target="_blank"> <h1>clic here to go to google</h1></a>
+                            </address>
+                        </footer>
+
+                    </article>
+
+                    <article>
+                        <hgroup>
+                            <h1>Second Article</h1>
+                            <h2>Subtitle second article</h2>
+                        </hgroup>
+                        <time datetime="12-09-2039">Published 12-09-2039</time> 
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit totam error unde nesciunt praesentium ipsum tenetur quidem odit qui voluptatum illo expedita necessitatibus, velit explicabo cum consectetur dolorem tempore, numquam sed facere? Debitis eius laudantium ut dolorem assumenda temporibus alias.</p>
+                        <footer>
+                            <p>Comments (19)</p>    
+                            <p>this is goint to make<br> a line break</p>
+                        </footer>
+                    </article>
+                </div>
+            </section>
+
+            <div class="container">
+                
+                <aside>
+                    <blockquote class="blockquote"> 
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A commodi sed sint, libero exercitationem fugit dignissimos ipsa facilis voluptatum atque amet rerum, porro eos. Minus commodi molestias similique inventore deleniti?</p>
+                        <footer class="blockquote-footer">Quote by <cite title="Somebody">Somebody</cite></footer>
+                    </blockquote>
+                </aside>
+
+                <ui class="list-unstyled">
+                    <li>Principal 1</li>
+                    <li>Principal 2</li>
+                    <li>Principal 3</li>
+                </ui> 
+
+                <hr>
+
+                <ol class="list-inline">
+                    <li class="list-inline-item">Principal 1</li>
+                    <li class="list-inline-item">Principal 2</li>
+                    <li class="list-inline-item">Principal 3</li>
+                </ol>          
+
+            </div>    
+
+            <div class="container">
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" placeholder="Add Name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" placeholder="Add Email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea class="form-control" placeholder="Add Message"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="gender">Gender</label>
+                        <select class="form-control" name="gender">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </div>
+
+                    <div style="width: 70px;">
+                        <label for="age">Age</label>
+                        <input type="number" class="form-control" placeholder="18" name="age" min="18" max="100" step="1">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="file">Upload file</label>
+                        <input type="file">
+                        <p class="help-block">Png and Jpg</p>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="checkbox">
+                            <input type="checkbox"> Check
+                        </label>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="color" value="#0c1da5" id="muestrario">
+                    </div>    
     
-    constructor(){
-        super();
-        this.state = {
-            message: "my friend (from state)!"
-        };
-        this.updateMessage = this.updateMessage.bind(this);
-    }
-    updateMessage() {
-        this.setState({
-            message: "my friend (from changed state)!"
-        });
-    }
-    render() {
-         return (
-           <div>
-             <h1>Hello {this.state.message}!</h1>
-             <button onClick={this.updateMessage}>Click me!</button>
-           </div>   
-        	)
-    	}
-	}
+                    <button type="submit" class="btn btn-default">
+                        Submit
+                    </button>
+                </form>
 
-    ReactDOM.render(
-    <Hello/>
-    //<Hello2 
-	//	message="my friend"
-	// />
-    , 
-	    document.getElementById("root")
-	);
-    </script>
-</body>
+                <hr>
+
+                <form class="form-inline">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" placeholder="Add Name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" placeholder="password">
+                    </div>
+
+                </form>    
+            </div>
+
+            <hr>
+
+            <div class="progress">
+                <div class="progress-bar progress-bar-success progress-bar-striped active" style="width: 50%;">
+                    50%
+                </div>
+            </div>
+
+            <hr>
+        </main>
+
+        <footer style="background: #333; color: #fff; padding: 20px;">
+            <div class="container">
+                    Written by joma<br> 
+                    Visit us at:<br>
+                    website.com<br>
+                    054, Arequipa<br>
+                    Peru
+                    <p style="text-align: center;">Copyright &copy; 2019; My website </p>
+            </div>
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    </body>
+
 </html>
+
